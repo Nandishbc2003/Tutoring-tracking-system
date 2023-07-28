@@ -1,0 +1,354 @@
+<center><!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">.nbc-effect {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nbc-effect span {
+  display: inline-block;
+  position: relative;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.nbc-effect .n, .nbc-effect .b, .nbc-effect .c, .nbc-effect .s {
+  animation-name: updown;
+}
+
+.nbc-effect .o, .nbc-effect .u, .nbc-effect .t, .nbc-effect .i, .nbc-effect .n {
+  animation-name: updownreverse;
+}
+
+.nbc-effect .l {
+  animation-name: blink;
+}
+
+.nbc-effect .space {
+  width: 20px;
+}
+
+@keyframes updown {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+}
+
+@keyframes updownreverse {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
+<title></title>
+</head>
+<body>
+<div class="nbc-effect">
+  <span class="n">N</span>
+  <span class="b">B</span>
+  <span class="c">C</span>
+  <span class="space"></span>
+  <span class="s">S</span>
+  <span class="o">O</span>
+  <span class="l">L</span>
+  <span class="u">U</span>
+  <span class="t">T</span>
+  <span class="i">I</span>
+  <span class="o">O</span>
+  <span class="n">N</span>
+  <span class="s">S</span>
+</div><br>
+-----------------------------------------
+</body>
+</html>
+<br><br>
+<div class="neumorphism-card">
+  <h2>Tutoring Tracking System</h2><br><code>(A PORTAL TO TRACK THE TUTORING RECORDS DIGITALLY)</code><br><code>(CREATED FOR SIMPLICITY,BEST,BRAVENESS)</code>
+</div>
+<style type="text/css">.neumorphism-card {
+  background-color: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 7px 7px 14px #bfc5d1, 
+              -7px -7px 14px #ffffff;
+  padding: 20px;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.neumorphism-card h2 {
+  color: #1c2331;
+  margin: 0;
+  text-align: center;
+  text-shadow: 1px 1px #ffffff;
+}
+</style><br><br><br><br><br><br>
+<div style="display: flex; justify-content: center;">
+  <img src="a.jpg" alt="Image" height="65%" width="67%"/>
+</div>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+#ju{
+background-color:orange;
+height:150px;
+width:350px;
+
+
+}
+
+</style>
+	<title>Tutoring Tracking System</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- Include jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- Include Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<style>
+		/* Your custom styles here */
+	</style>
+</head>
+<body>
+	<!-- Header -->
+	<header><br><br><br><br><br><br><br><br>
+	
+		<div class="container"><center>
+			</center></div>
+	</header>
+	<br><br><br><br><br><br>
+	<!-- Login Form -->
+	<section id="login">
+		<div class="container">
+			<form id="login-form">
+				<div class="form-group">
+					<label for="userid">User ID:</label>
+					<input type="text" class="form-control" id="userid" name="userid" placeholder="Enter User ID">
+				</div>
+				<div class="form-group">
+					<label for="password">Password:</label>
+					<input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
+				</div>
+				<button type="submit" class="btn btn-primary">Login</button>
+			</form></div>
+		</div>
+	</section>
+	<!-- Include jQuery and Bootstrap JS at the end of the body tag to improve page load speed -->
+	<script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    // Login form submit
+    $('#login-form').submit(function(e) {
+      e.preventDefault();
+      var userid = $('#userid').val();
+      var password = $('#password').val();
+      
+      // Validate user ID and password
+      switch (userid) {
+        case 'NBC20223CAN1':
+          if (password === 'girish') {
+            window.location.href = 'das1.html';
+          } else {
+            alert('Invalid user ID or password.');
+          }
+          break;
+        case 'NBC20223CAN2':
+          if (password === 'himanshu') {
+            window.location.href = 'das2.html';
+          } else {
+            alert('Invalid user ID or password.');
+          }
+          break;
+        case 'NBC20223CAN3':
+          if (password === 'prithvi') {
+            window.location.href = 'das3.html';
+          } else {
+            alert('Invalid user ID or password.');
+          }
+          break;
+        case 'NBC20223CAN4':
+          if (password === 'pavan') {
+            window.location.href = 'das4.html';
+          } else {
+            alert('Invalid user ID or password.');
+          }
+          break;
+        case 'NBC20223CAN5':
+          if (password === 'vinod') {
+            window.location.href = 'das5.html';
+          } else {
+            alert('Invalid user ID or password.');
+          }
+          break;
+        case 'NBC20223CAN6':
+          if (password === 'chethana') {
+            window.location.href = 'das6.html';
+          } else {
+            alert('Invalid user ID or password.');
+          }
+          break;
+        case 'NBC20223CAN7':
+          if (password === 'jeevan') {
+            window.location.href = 'dasn.html';
+          } else {
+            alert('Invalid user ID or password.');
+          }
+          break;
+        default:
+          alert('Invalid user ID or password.');
+          break;
+      }
+    });
+  });
+</script>
+
+
+
+
+    
+	</script>
+	
+	
+	
+	</body></html><br><br><br><br><br><br><br>
+	<div class="tutor-card">
+	<div class="tutor-card-photo">
+	<img src="po.jpg" alt="Tutor Photo">
+	</div>
+	<divclass="tutor-card-details">
+	<h2>NANDISH BC</h2><br>SOFTWARE DEVELOPER
+	<p>Age: 20</p>
+	<p>Class:BCOM 2ND YEAR</p>
+	<p>Subjects Taught: Maths,Accountancy,business,statistics,coding etc</p>
+	<p>Experience: 5 years</p>
+	<div class="tutor-card-hover">
+	<p>Contact:</p>
+	<p>Email: nandishbc2023@gmail.com</p>
+	<p>Phone:9731375764</p>
+	</div>
+	</div>
+	</div>
+	<style type="text/css">.tutor-card {
+	display: flex;
+	justify-content: space-between;
+	background: #f2f2f2;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 10px 10px 20px #cfcfcf,
+	-10px -10px 20px #ffffff;
+	}
+	
+	.tutor-card-photo {
+	margin-right: 20px;
+	}
+	
+	.tutor-card-photo img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	}
+	
+	.tutor-card-size: 24px;
+	margin-bottom: 10px;
+	}
+	
+	.tutor-card-hover {
+	position: absolute;
+	bottom: -80px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #f2f2f2;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 5px 5px 10px #cfcfcf,
+	-5px -5px 10px #ffffff;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	}
+	
+	.tutor-card:hover .tutor-card-hover {
+	bottom: -120px;
+	opacity: 1;
+	}
+	
+	.tutor-card-hover p:first-child {
+	font-weight: bold;
+	margin-bottom: 10px;
+	}
+	</style><br><br><br>
+	
+	<div class="footer">
+	<p>DESIGNED AND DEVELOPED BY NANDISH BC (ID-U18CW21C0134). CONTENT CREATED AND UPDATED BY NBC SOLUTIONS</p>
+	<p>COPYRIGHTS ALL RIGHTS RESERVED PORTAL ID: NBC2023TUTRRAC AND last updated on <span id="last-updated"></span></p>
+	</div>
+	<style type="text/css">.footer {
+	background-color: #f2f2f2;
+	color: #444444;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+	border-top: 1px solid #cccccc;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	}
+	
+	.footer:hover {
+	background-color: #e0e0e0;
+	}
+	
+	.footer p {
+	margin: 5px;
+	}
+	
+	#last-updated {
+	font-weight: bold;
+	}
+	</style>
+	<script type="text/javascript">const lastUpdated = document.getElementById("last-updated");
+	
+	// Get the current date and time in the format: Month day, year, hour:minute AM/PM
+	const currentDate = new Date();
+	const options = { 
+	year: 'numeric', 
+	month: 'long', 
+	day: 'numeric', 
+	hour: 'numeric', 
+	minute: 'numeric',
+	hour12: true 
+	};
+	const formattedDate = currentDate.toLocaleDateString('en-US', options);
+	
+	// Set the text of the last-updated element to the formatted date and time
+	lastUpdated.textContent = formattedDate;
+  </script>
