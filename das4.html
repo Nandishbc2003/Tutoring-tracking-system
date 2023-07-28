@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Profile</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		.card {
+			width: 300px;
+			background-color: #fff;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			padding: 20px;
+			margin: 50px auto;
+			text-align: center;
+		}
+		.card img {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin-bottom: 20px;
+			border: 5px solid #fff;
+			box-shadow: 0 0 0 5px #f2f2f2;
+		}
+		.card h2 {
+			font-size: 28px;
+			margin-bottom: 10px;
+		}
+		.card p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		.card button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.card button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<img src="db.jpg" alt="Student Photo">
+		<h2>PAVAN</h2>
+		<p>School Name:VANI VIDYA KENDRA</p>
+		<p> Address:chikkagollarahatti ,bangalore </p>
+		<p>Age: 14</p>
+		<p>class-9th</p>
+		<button>BE CREATIVE</button>
+	</div>
+</body>
+</html>
+<br><br><br><br><!DOCTYPE html>
+<html>
+<head>
+	<title>Student Progress Report</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+			font-size: 16px;
+			text-align: center;
+		}
+		th, td {
+			padding: 10px;
+			border: 1px solid #ddd;
+		}
+		th {
+			background-color: #f2f2f2;
+			font-weight: bold;
+			text-align: center;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		tr:hover {
+			background-color: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<h1>Student Progress Report</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Month</th>
+				<th>Subject</th>
+				<th>Concepts Studied</th>
+				<th>Improvement</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>sep 2022-feb-2023</td>
+				<td>Mathematics</td>
+				<td>njmber systems,heron s formula,surface areas and formulas,lines and angles etc.</td>
+				<td>Yes</td>
+			</tr>
+		
+		</tbody>
+	</table><br><br><br><section class="image-gallery">
+	<div class="image">
+	<img src="da.jpg" alt="Image 1">
+	<div class="overlay">
+	<img src="da.jpg" alt="Image 1">
+	</div>
+	</div>
+	<div class="image">
+	<img src="dc.jpg" alt="Image 2">
+	<div class="overlay">
+	<img src="dc.jpg" alt="Image 2">
+	</div>
+	</div>
+	<div class="image">
+	<img src="dd.jpg" alt="Image 3">
+	<div class="overlay">
+	<img src="dd.jpg" alt="Image 3">
+	</div>
+	</div>
+	</section><style type="text/css">.image-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+	
+	.image {
+	position: relative;
+	width: 280px;
+	height: 300px;
+	margin: 10px;
+	overflow: hidden;
+	}
+	
+	.image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.5s;
+	}
+	
+	.image:hover img {
+	transform: translateX(50%);
+	}
+	
+	.overlay {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	transition: left 0.5s;
+	}
+	
+	.image:hover .overlay {
+	left: 0;
+	}
+	
+	.overlay img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	}
+	</style>
+	<section class="payment-details">
+	<h2>Payment Details</h2>
+	<table>
+	<thead>
+	<tr>
+	<th>No. of Months</th>
+	<th>Fees per Month</th>
+	<th>Total Amount</th>
+	<th>Amount Paid</th>
+
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td>6</td>
+	<td>1000</td>
+	<td>6000</td>
+	<td>6000</td>
+	
+	</tr>
+
+	</tbody>
+	</table>
+	</section>
+	<style type="text/css">.payment-details {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+	text-align: center;
+	}
+	
+	.payment-details h2 {
+	margin-bottom: 20px;
+	}
+	
+	.payment-details table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	}
+	
+	.payment-details th,
+	.payment-details td {
+	padding: 10px;
+	border: 1px solid #ccc;
+	}
+	
+	.payment-details th {
+	background-color: #333;
+	color: #fff;
+	}
+	
+	.payment-details td:first-child {
+	text-align: left;
+	}
+	</style>
+	<script type="text/javascript">const tableRows = document.querySelectorAll('.payment-details tbody tr');
+	
+	tableRows.forEach(row => {
+	const fees = parseInt(row.children[1].textContent.slice(1));
+	const paid = parseInt(row.children[3].textContent.slice(1));
+	const due = fees * parseInt(row.children[0].textContent) - paid;
+	row.children[4].textContent = `$${due}`;
+	});
+	</script>
+	<!DOCTYPE html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Certificate</title>
+	<style>
+	.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #f2f2f2;
+	}
+	.certificate {
+	position: relative;
+	width: 800px;
+	height: 600px;
+	background-image: url('aa.jpg');
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	}
+	.details {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+	}
+	.details p {
+	margin: 10px;
+	}
+	.button {
+	display: inline-block;
+	background-color: lightgreen;
+	color: #000;
+	padding: 10px;
+	margin-top: 20px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease-in-out;
+	}
+	.button:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	}
+	.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	}
+	.popup-content {
+	position: relative;
+	width: 500px;
+	height: 400px;
+	background-color: cyan;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
+	.popup-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	cursor: pointer;
+	}
+	.popup-title {
+	font-size: 32px;
+	font-weight: bold;
+	color: red;
+	margin-bottom: 20px;
+	}
+	.popup-body {
+	font-size: 18px;
+	color: orange;
+	margin-bottom: 20px;
+	}
+	</style>
+	</head>
+	<body>
+	<section><br><br><br>
+	<div class="container">
+	<div class="certificate">
+	<div class="details">
+	<p>Name: PAVAN</p>
+	<p>Class: 9th</p>
+	<p>Age: 14</p>
+	
+	<p>School: VANI VIDYA KENDRA</p>
+	<button class="button" id="validate-button">Validate</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="popup" id="popup">
+		<div class="popup-content">
+			<span class="popup-close" id="popup-close">&times;</span>
+			<h2 class="popup-title">Certificate Validated</h2>
+			<p class="popup-body">This is to certify that PAVAN has successfully completed 6 months of tutoring at NBC and is eligible for a credit of 80 points and promoted for 10 th class </p>
+		</div>
+	</div>
+	<script>
+		const validateButton = document.getElementById('validate-button');
+		const popup = document.getElementById('popup');
+		const popupClose = document.getElementById('popup-close');
+	
+		validateButton.addEventListener('click', () => {
+			popup.style.display = 'flex';
+		});
+	
+		popupClose.addEventListener('click', () => {
+			popup.style.display = 'none';
+		});
+	</script>
+	
