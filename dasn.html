@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JEEVAN LEARNING MANAGEMENT SYSTEM</title>
+    <style>
+      header {
+        background-color: #007bff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+      p {
+        font-size: 18px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>JEEVAN LEARNING MANAGEMENT SYSTEM</h1>
+      <p>(maintained and run by NBC SOLUTIONS)</p>
+      <p>a system for discipline and flexible learning</p>
+    </header>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JEEVAN LEARNING MANAGEMENT SYSTEM</title>
+    <style>
+      header {
+        background-color: #007bff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+      p {
+        font-size: 18px;
+        margin: 0;
+      }
+      .module-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 0;
+      }
+      .module {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .module:hover .module-title {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .module:hover .module-circle {
+        animation: module-animation 2s infinite;
+      }
+      .module-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      .module-circle {
+        position: absolute;
+        top: -20px;
+        left: calc(50% - 20px);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #007bff;
+        animation: module-animation 2s infinite;
+      }
+      @keyframes module-animation {
+        0% {
+          transform: translate(-50%, 0);
+        }
+        50% {
+          transform: translate(-50%, 20px);
+        }
+        100% {
+          transform: translate(-50%, 0);
+        }
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        margin: 0 20px;
+      }
+      nav a {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 24px;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <br><br><br><h2><center>--------------------------<br>MODULES<br>
+    ----------------+---------------<br><br>
+<div class="module-section">
+  <div class="module" id="requirements">
+<div class="module-title">Requirements Fulfillment</div>
+<div class="module-circle"></div>
+  </div>
+  <div class="module" id="negotiation">
+<div class="module-title">Negotiation</div>
+<div class="module-circle"></div>
+  </div>
+  <div class="module" id="tutoring">
+<div class="module-title">Tutoring</div>
+<div class="module-circle"></div>
+  </div>
+  <div class="module" id="tests">
+<div class="module-title">Tests</div>
+<div class="module-circle"></div>
+  </div>
+  <div class="module" id="report">
+<div class="module-title">Report</div>
+<div class="module-circle"></div>
+  </div>
+  <div class="module" id="certificate">
+<div class="module-title">Certificate</div>
+<div class="module-circle"></div>
+  </div>
+</div>
+<script>
+  const modules = document.querySelectorAll('.module');
+  const moduleSections = document.querySelectorAll('.module-section');
+  const navLinks = document.querySelectorAll('nav a');
+  
+  navLinks.forEach((link) => {
+link.addEventListener('click', (event) => {
+  event.preventDefault();
+  const sectionId = link.getAttribute('href').slice(1);
+  const section = document.getElementById(sectionId);
+  const top = section.offsetTop - 100;
+  window.scrollTo({ top, behavior: 'smooth' });
+});
+  });
+  
+  moduleSections.forEach((section) => {
+const modules = section.querySelectorAll('.module');
+modules.forEach((module) => {
+  const circle = module.querySelector('.module-circle');
+  const title = module.querySelector('.module-title');
+  circle.style.animationDelay = `${Math.random() * 2}s`;
+  title.style.transitionDelay = `${Math.random() * 0.5}s`;
+});
+  });
+</script>
+<br><br><div class="profile-card">
+  <div class="profile-card-header">
+    <div class="profile-card-photo">
+      <img src="passport-photo.jpg" alt="Passport Photo">
+    </div>
+    <div class="profile-card-name">John Doe</div>
+    <div class="profile-card-address">123 Main St, Anytown USA</div>
+  </div>
+  <div class="profile-card-details">
+    <div class="profile-card-school">Anytown High School</div>
+    <div class="profile-card-class">Class of 2023</div>
+  </div>
+</div>
+<style type="text/css">.profile-card {
+  display: inline-block;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-card-photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-card-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-card-address {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.profile-card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-card-school,
+.profile-card-class {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-card:hover {
+  background-color: #eee;
+}
+
+.profile-card:hover .profile-card-name {
+  color: #33ccee;
+}
+
+.profile-card:hover .profile-card-photo img {
+  border: 3px solid #33ccee;
+}
+</style>
+<div class="neuromorphic-box">
+  <div class="text-content">
+    <p>New message received</p>
+    <p>Payment successful</p>
+    <p>Account created</p>
+  </div>
+</div>
+<style type="text/css">.neuromorphic-box {
+  width: 300px;
+  height: 200px;
+  background: #f3f3f3;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 50px auto;
+  box-shadow:
+    inset 5px 5px 10px #cbced1,
+    inset -5px -5px 10px #ffffff,
+    5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(255, 255, 255, 0.7);
+}
+
+.text-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.text-content p {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  animation: slide-up 5s ease-in-out infinite;
+}
+
+.text-content p:nth-child(2) {
+  animation-delay: 2s; /* delay the start of the animation */
+}
+
+.text-content p:nth-child(3) {
+  animation-delay: 4s; /* delay the start of the animation */
+}
+
+@keyframes slide-up {
+  0% {
+    top: 100%; /* start position, below the text content div */
+  }
+  100% {
+    top: 0; /* end position, at the top of the text content div */
+  }
+}
+</style><br><br><table>
+  <thead>
+    <tr>
+      <th>Subject Name</th>
+      <th>Subject Code</th>
+      <th>Subject Type</th>
+      <th>Level of Subject</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>mathematics</code></td>
+      <td><code>mat101</code></td>
+      <td><code>core</code></td>
+      <td><code>basic</code></td>
+    </tr>
+    <tr>
+      <td><code>english</code></td>
+      <td><code>eng101</code></td>
+      <td><code>core</code></td>
+      <td><code>basic</code></td>
+    </tr>
+    <tr>
+      <td><code>physics</code></td>
+      <td><code>phy101</code></td>
+      <td><code>core</code></td>
+      <td><code>basic</code></td>
+    </tr>
+    <tr>
+      <td><code>chemistry</code></td>
+      <td><code>che101</code></td>
+      <td><code>core</code></td>
+      <td><code>basic</code></td>
+    </tr>
+    <tr>
+      <td><code>biology</code></td>
+      <td><code>bio101</code></td>
+      <td><code>core</code></td>
+      <td><code>basic</code></td>
+    </tr>
+    <tr>
+      <td><code>history</code></td>
+      <td><code>his101</code></td>
+      <td><code>elective</code></td>
+      <td><code>basic</code></td>
+    </tr>
+    <tr>
+      <td><code>geography</code></td>
+      <td><code>geo101</code></td>
+      <td><code>elective</code></td>
+      <td><code>basic</code></td>
+    </tr>
+    <tr>
+      <td><code>economics</code></td>
+      <td><code>eco101</code></td>
+      <td><code>elective</code></td>
+      <td><code>basic</code></td>
+    </tr>
+    <tr>
+      <td><code>computer science</code></td>
+      <td><code>cse101</code></td>
+      <td><code>elective</code></td>
+      <td><code>basic</code></td>
+    </tr>
+    <tr>
+      <td><code>physical education</code></td>
+      <td><code>ped101</code></td>
+      <td><code>elective</code></td>
+      <td><code>basic</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="summary-box">
+  <h2>Summary</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at velit id mauris cursus suscipit. Fusce vel urna vitae lorem pretium viverra nec in arcu. Donec eleifend tortor non ante bibendum semper. </p>
+  <button class="btn" onclick="window.location.href='home.html'">HOME</button>
+  <button class="btn" onclick="window.location.href='about.html'">ABOUT</button>
+  <button class="btn" onclick="window.location.href='reports.html'">REPORTS</button>
+  <button class="btn" onclick="window.location.href='create.html'">CREATE</button>
+  <button class="btn" onclick="window.location.href='develop.html'">DEVELOP</button>
+</div>
+<style type="text/css">.summary-box {
+  background-color: #F2F2F2;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px #D9D9D9, -10px -10px 15px #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.summary-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.summary-box p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #C4C4C4;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8F8F8F;
+}
+</style>
+
+
+
+<div class="box">
+  <table>
+    <thead>
+      <tr>
+        <th>Tutor Name</th>
+        <th>Tutor Address</th>
+        <th>Tutor Fees</th>
+        <th>Timings of Tutoring</th>
+        <th>Subjects Handled</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Smith</td>
+        <td>123 Main St.</td>
+        <td>$50/hr</td>
+        <td>Monday-Friday 4pm-7pm</td>
+        <td>Math, Science, English</td>
+      </tr>
+      <td>
+      <td>Tutor Name</td>
+      <td>Total Number of Subjects Handling</td>
+      <td>Total Fees per Month</td>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>5</td>
+      <td>$500</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+      
+
+  
+    
+<style type="text/css">.box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+td:hover {
+  background-color: #fffacd;
+}
+</style>
+<div class="footer">
+  <p>DESIGNED AND DEVELOPED BY NANDISH BC (ID-U18CW21C0134) | PORTAL ID-28+! ₹? ₹(₹; </p>
+  <p>Last updated on March 18, 2023 at 9:00 AM</p>
+  <p>CONTENT CREATED AND UPDATED BY NBC SOLUTIONS (TPMU-TUTORING PROJECT MONITORING UNIT)</p>
+</div>
+<style type="text/css">.footer {
+  background-color: #F2F2F2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: #707070;
+}
+
+.footer p:first-child {
+  margin-bottom: 10px;
+}
+
+.footer p:last-child {
+  margin-top: 10px;
+}
+</style>
