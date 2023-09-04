@@ -8,19 +8,6 @@ http://tutor-tracking-system.nandishbc2003.repl.co/
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .card {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px;
-            width: 300px;
-            background-color: #f7f7f7;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-        .student-name {
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
     <div class="card">
