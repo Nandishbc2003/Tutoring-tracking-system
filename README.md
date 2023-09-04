@@ -17,7 +17,6 @@ http://tutor-tracking-system.nandishbc2003.repl.co/
             background-color: #f7f7f7;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
-
         .student-name {
             font-weight: bold;
         }
@@ -29,31 +28,26 @@ http://tutor-tracking-system.nandishbc2003.repl.co/
         <p>User ID: NBC20223CAN1</p>
         <p>Password: girish</p>
     </div>
-
     <div class="card">
         <p class="student-name">Student Name: Himanshu</p>
         <p>User ID: NBC20223CAN2</p>
         <p>Password: himanshu</p>
     </div>
-
     <div class="card">
         <p class="student-name">Student Name: Prithvi</p>
         <p>User ID: NBC20223CAN3</p>
         <p>Password: prithvi</p>
     </div>
-
     <div class="card">
         <p class="student-name">Student Name: Pavan</p>
         <p>User ID: NBC20223CAN4</p>
         <p>Password: pavan</p>
     </div>
-
     <div class="card">
         <p class="student-name">Student Name: Vinod</p>
         <p>User ID: NBC20223CAN5</p>
         <p>Password: vinod</p>
     </div>
-
     <div class="card">
         <p class="student-name">Student Name: Chethana</p>
         <p>User ID: NBC20223CAN6</p>
